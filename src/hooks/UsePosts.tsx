@@ -27,10 +27,11 @@ const UsePosts = () => {
             collection(firestore,"users",`${user?.uid}/postVotes`),
             where("postId","==",post.id),
         );
-        const postVoteDocs= await getDocs(postVotesQuery);
+        const postVoteDocs= await (await getDocs(postVotesQuery));
         const postVotes=postVoteDocs.docs.map((doc)=>({id:doc.id,...doc.data()}))
+        console.log(postVotes);
         const {voteStatus}=post;
-        const existingVote=postVotes[0];
+        const existingVote=postVotes[0] as PostVotes;
         try {
             let voteChange=vote;
             const batch=writeBatch(firestore);
