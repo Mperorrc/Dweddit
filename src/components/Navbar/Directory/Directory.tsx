@@ -30,6 +30,7 @@ const UserMenu:React.FC= () => {
                             src={directoryState.selectedmenuItem.imageURL} 
                             borderRadius="full"
                             boxSize={"24px"}
+                            alt="IMG"
                             mr={2}
                         />
                     ):(

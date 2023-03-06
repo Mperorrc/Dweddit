@@ -17,7 +17,7 @@ const MenuListItem:React.FC<MenuListItemProps> = ({displayText,link,icon,iconCol
         <MenuItem width={"100%"} fontSize="10pt" _hover={{bg:"gray.100"}} onClick={()=>onSelectMenuItem({displayText,link,icon,iconColor,imageURL})}>
             <Flex align="center">
                 {imageURL?(
-                    <Image src={imageURL} borderRadius="full" boxSize={"19px"} mr={2}/>
+                    <Image src={imageURL} alt="img" borderRadius="full" boxSize={"19px"} mr={2}/>
                 ):(
                     <Icon as={icon} fontSize={20} mr={2} color={iconColor}/>
                 )}

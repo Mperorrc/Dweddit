@@ -14,7 +14,7 @@ const ImageForm:React.FC<ImageFormProps> = ({selectedFile,onSelectImage,setSelec
         <Flex direction="column" justify="center" align="center" width="100%">
             {selectedFile?(
                 <>
-                    <Image src={selectedFile} maxWidth="300px" maxHeight={"300px"} />
+                    <Image src={selectedFile} alt="image" maxWidth="300px" maxHeight={"300px"} />
                     <Stack direction="row" mt={4}>
                         <Button
                             height="30px"

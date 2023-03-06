@@ -8,8 +8,9 @@ import { Box, Text } from '@chakra-ui/react';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
-const [user]=useAuthState(auth);
-const submit:React.FC= () => {
+
+const Submit:React.FC= () => {
+    const [user]=useAuthState(auth);
     const {communityStateValue} =useCommunityData();
     return(
         <PageContent>
@@ -25,4 +26,4 @@ const submit:React.FC= () => {
         </PageContent>
     )
 }
-export default submit;
+export default Submit;

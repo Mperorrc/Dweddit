@@ -77,9 +77,9 @@ const Home: NextPage=()=>{
   useEffect(()=>{
     if(!user && !loadingUser){ buildNoUserHomeFeed();}
   },[user,loadingUser])
-  // useEffect(()=>{
-  //   if(!user && postStateValue.posts.length){ FetchUserPostVotes();}
-  // },[user,postStateValue.posts])
+  useEffect(()=>{
+    if(!user && postStateValue.posts.length){ FetchUserPostVotes();}
+  },[user,postStateValue.posts])
   return(
     <PageContent>
       <>

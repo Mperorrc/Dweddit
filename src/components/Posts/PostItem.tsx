@@ -80,7 +80,7 @@ const PostItem:React.FC<PostItemProps> = ({post,userIsCreator,homePage,userVoteV
                        {homePage&&(
                         <>
                             {post.communityImageURL?(
-                                <Image src={post.communityImageURL} boxSize="18px" mr={2} borderRadius="full" />
+                                <Image src={post.communityImageURL} alt="img" boxSize="18px" mr={2} borderRadius="full" />
                             ):(
                                 <Icon as={FaReddit} fontSize="18pt" mr={1} color="blue.500" />
                             )}

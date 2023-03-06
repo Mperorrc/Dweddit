@@ -29,10 +29,11 @@ const Navbar:React.FC = () => {
                 mr={{base:1,md:2}}
                 onClick={()=>onSelectMenuItem(defaultMenuItem)} 
             >
-                <Image src='/images/redditFace.svg' height={"30px"} />
+                <Image src='/images/redditFace.svg' alt="redditFace" height={"30px"} />
                 <Image 
                     src='/images/redditText.svg' 
                     height={"46px"} 
+                    alt="redditText"
                     display={{base:'none', md:"unset"}} 
                 />
             </Flex>
