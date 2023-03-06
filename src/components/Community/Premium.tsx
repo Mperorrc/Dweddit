@@ -22,7 +22,7 @@ const Premium:React.FC = () => {
                         Dweddit Premium
                     </Text>
                     <Text>
-                        The best Dweddit experience with Dwecoins - Dweddit's own Reward System
+                        The best Dweddit experience with Dwecoins - Dweddit&apos;s own Reward System
                     </Text>
                 </Stack>
             </Flex>
